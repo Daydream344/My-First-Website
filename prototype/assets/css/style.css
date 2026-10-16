@@ -1,0 +1,121 @@
+body{
+    font-family: "Isometra", serif;
+}
+
+:root {
+  --parchment: #f7f3e8;
+  --ink: #2b2b2b;
+  --rose: #c46a7a;
+  --amber: #e8b36d;
+  --twilight-blue: #5a6fa8;
+  --glow: rgba(255, 240, 200, 0.6);
+  --shadow: rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: "Isometra", serif;
+  background: var(--parchment);
+  color: var(--ink);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+
+  /* subtle dreamy texture */
+  background-image:
+    radial-gradient(var(--glow) 1px, transparent 1px),
+    radial-gradient(var(--shadow) 1px, transparent 1px);
+  background-size: 120px 120px, 6px 6px;
+  background-blend-mode: soft-light;
+}
+
+header.primary {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--rose),
+    var(--amber)
+  );
+  color: var(--parchment);
+  box-shadow: 0 4px 12px var(--shadow);
+  border-bottom: 4px solid var(--twilight-blue);
+}
+
+header.primary h1 {
+  font-family: "Isometra", serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px var(--shadow);
+}
+
+section {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  width: min(800px, 90%);
+  border: 2px solid var(--twilight-blue);
+  box-shadow: 0 6px 0 var(--rose);
+  border-radius: 6px;
+}
+
+a {
+  color: var(--twilight-blue);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid var(--amber);
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: var(--rose);
+  border-bottom-color: var(--rose);
+  text-shadow: 0 0 6px var(--glow);
+}
+
+a {
+  color: var(--twilight-blue);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid var(--amber);
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: var(--rose);
+  border-bottom-color: var(--rose);
+  text-shadow: 0 0 6px var(--glow);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: #c46a7a;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+nav a {
+  color: var(--parchment);
+  font-family: "Isometra", serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  margin: 1.5rem auto; /* centers the image */
+  max-width: 100%;     /* keeps images from overflowing */
+  height: auto;
+}
+
+section {
+  margin: 1.5rem auto;   /* was 2rem — reduces vertical white space */
+  padding: 1.5rem;       /* was 2rem — tighter interior spacing */
+}
+
+section img {
+  margin: 1rem auto;
+}
