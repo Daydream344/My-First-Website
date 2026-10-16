@@ -83,9 +83,9 @@ a {
 }
 
 a:hover {
-  color: var(--rose);
-  border-bottom-color: var(--rose);
-  text-shadow: 0 0 6px var(--glow);
+  color: #ffd9e2;
+  border-bottom-color: #ffd9e2;
+  text-shadow: 0 0 6px rgba(255, 220, 230, 0.6);
 }
 
 nav {
@@ -93,7 +93,7 @@ nav {
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
-  background: #c46a7a;
+  background: #a84a5f;
   box-shadow: 0 4px 8px var(--shadow);
 }
 
